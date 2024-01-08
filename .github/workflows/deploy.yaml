@@ -20,4 +20,5 @@ jobs:
         REMOTE_USER: ${{secrets.REMOTE_USER}}
         TARGET: ${{secrets.TARGET_DIR}}
         SCRIPT_AFTER: |
+          pip install -r requirements.txt
           uvicorn app.main:app --host 0.0.0.0 --port 80
