@@ -8,5 +8,6 @@ app = FastAPI()
 def index():
     return {
         'status_code': 200,
-        'message': 'Request Succesfully'
+        'message': 'Request Succesfully',
+        'result': []
     }
